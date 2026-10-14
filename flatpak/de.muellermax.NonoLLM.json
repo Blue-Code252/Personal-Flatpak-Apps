@@ -1,0 +1,33 @@
+{
+  "app-id": "de.muellermax.NonoLLM",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "49",
+  "sdk": "org.gnome.Sdk",
+  "command": "nono-llm",
+  "finish-args": [
+    "--share=network",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--socket=session-bus",
+    "--device=dri",
+    "--talk-name=org.freedesktop.Flatpak"
+  ],
+  "modules": [
+    {
+      "name": "nono-llm",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm755 app.py /app/bin/nono-llm",
+        "install -Dm644 de.muellermax.NonoLLM.desktop /app/share/applications/de.muellermax.NonoLLM.desktop",
+        "install -Dm644 de.muellermax.NonoLLM.metainfo.xml /app/share/metainfo/de.muellermax.NonoLLM.metainfo.xml",
+        "install -Dm644 icons/de.muellermax.NonoLLM.svg /app/share/icons/hicolor/scalable/apps/de.muellermax.NonoLLM.svg"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "../src"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Nono LLM
+Comment=nono-sandboxed Ollama-Server steuern und chatten
+Exec=nono-llm
+Icon=de.muellermax.NonoLLM
+Terminal=false
+Type=Application
+Categories=Utility;Development;
+Keywords=llm;ollama;nono;sandbox;ai;

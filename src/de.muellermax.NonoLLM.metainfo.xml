@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>de.muellermax.NonoLLM</id>
+  <name>Nono LLM</name>
+  <summary>nono-sandboxed Ollama-Server steuern und chatten</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <launchable type="desktop-id">de.muellermax.NonoLLM.desktop</launchable>
+  <description>
+    <p>Startet und stoppt den Ollama-Server in seiner nono-Sandbox
+    (Landlock) und bietet ein Chat-Fenster für lokale Modelle.
+    Zeigt GNOME-Benachrichtigungen bei Statuswechseln.</p>
+  </description>
+</component>
